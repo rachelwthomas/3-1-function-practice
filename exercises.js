@@ -88,29 +88,28 @@
   // ---------------------
 
 
-  // function kebabToSnake(str) {
-  // //replace all -- with __
-  //
-  // let newStr = str.replace(/-/g,"_");
-  // //return str
-  //
-  // }
-
- //  var str = "123456789";
- // var chuncks = str.match(/.{1,3}/g);
- // var new_value = chuncks.join("-"); //returns 123-456-789
 
   let rovarspraket = (str) => {
 
+    // looping through each letter of the string
     for (let i = 0; i < str.length; i++) {
-      console.log(isVowel((str.charAt(i))));
+      // determining if each letter is a true=vowel or false=consonant
+    let result = ((isVowel((str.charAt(i)))));
+    // console.log(str.charAt(i));
+    // console.log(result);
+    // if the letter is false the charater is printed then an o is added and then printed again
+    if(result === false) {
+      console.log(str.charAt(i) +"o"+ str.charAt(i));
     }
-    if (chartAt(i) === false) {
-      
+    else {
+      console.log(str.charAt(i));
     }
+
+    }
+
  }
 
-  rovarspraket("hello");
+  rovarspraket("this is fun");
 
 
   //   let newStr = str.replace(/t/g,"tt")
