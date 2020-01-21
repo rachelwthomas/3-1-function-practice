@@ -5,6 +5,29 @@
   // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
   // ---------------------
 
+  // function description
+  // parameter description
+  // return description
+
+// function returns the higher of the two inputs
+// num1 and num2 are numbers to compare
+// returns the higher of the two variables
+
+    // let max = (num1, num2) => {
+    //
+    //   if(num1 > num2) {
+    //     return num1
+    //   }
+    //   else {
+    //     return num2
+    //   }
+    // }
+    //
+    //
+    // console.log(max(4,2));
+    // console.log(max(2,7));
+
+
 
 
 
@@ -13,6 +36,19 @@
   // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
   // ---------------------
 
+  // function description-finds the max value of three
+  // parameter description-num1, num2 and num3 are numbers to compare
+  // return description-the highest number of the 3 variables will be returned
+
+
+  // let maxOfThree = (num1, num2, num3) => {
+  //
+  //   return Math.max(num1, num2,num3);
+  //
+  //
+  // }
+  //
+  // console.log(maxOfThree(3,7,10));
 
 
 
@@ -21,6 +57,28 @@
   // Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
   // ---------------------
 
+  // function description-determines if a letter is a vowel not
+  // parameter description-char is the number to determine if it is a vowel or not
+  // return description-will return true if vowel, false if not
+
+
+  let vowel =["a", "e" , "i", "o", "u", "y"]
+
+  let isVowel = (char) => {
+
+    if (vowel.indexOf(char) === -1) {
+      return false
+    }
+    else {
+      return true
+    }
+
+  }
+  //
+  // console.log(isVowel("a"));
+  // console.log(isVowel("e"));
+  // console.log(isVowel("u"));
+  // console.log(isVowel("n"));
 
 
 
@@ -28,6 +86,52 @@
   // ---------------------
   // Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
   // ---------------------
+
+
+  // function kebabToSnake(str) {
+  // //replace all -- with __
+  //
+  // let newStr = str.replace(/-/g,"_");
+  // //return str
+  //
+  // }
+
+ //  var str = "123456789";
+ // var chuncks = str.match(/.{1,3}/g);
+ // var new_value = chuncks.join("-"); //returns 123-456-789
+
+  let rovarspraket = (str) => {
+
+    for (let i = 0; i < str.length; i++) {
+      console.log(isVowel((str.charAt(i))));
+    }
+    if (chartAt(i) === false) {
+      
+    }
+ }
+
+  rovarspraket("hello");
+
+
+  //   let newStr = str.replace(/t/g,"tt")
+  //   return newStr
+  // }
+
+
+
+
+
+
+  // console.log(rovarspraket("tot"));
+    // function kebabToSnake(str) {
+    // //replace all -- with __
+    //
+    // let newStr = str.replace(/-/g,"_");
+    // //return str
+    //
+    // }
+    //
+
 
 
 
@@ -67,6 +171,6 @@
 
   // ---------------------
   // Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
-  // --------------------- 
+  // ---------------------
 
 })();
