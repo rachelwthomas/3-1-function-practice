@@ -34,6 +34,10 @@ function doSomethingCool() {
 // Put your answer below -------------------------
 
 
+let apple = function () {
+  console.log("Something Cool!");
+}
+
 // -----------------------------------------------
 
 //////////////////////////////////////////////////

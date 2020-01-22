@@ -15,6 +15,8 @@
 
     // let max = (num1, num2) => {
     //
+    //   // return num1 >= num2 ? num1: num2;
+    //
     //   if(num1 > num2) {
     //     return num1
     //   }
@@ -22,7 +24,8 @@
     //     return num2
     //   }
     // }
-    //
+
+    // console.assert(max(2,4) === 4, 'error: max function');
     //
     // console.log(max(4,2));
     // console.log(max(2,7));
@@ -74,6 +77,14 @@
     }
 
   }
+
+
+// let isVowel = (char) => {
+//   let vowels = 'aeiou';
+//   return vowels.includes(char);
+// }
+
+
   //
   // console.log(isVowel("a"));
   // console.log(isVowel("e"));
@@ -92,27 +103,28 @@
   // return description-will bring every consonant twice with an o in between
 
 
- //  let rovarspraket = (str) => {
- //
- //    // looping through each letter of the string
- //    for (let i = 0; i < str.length; i++) {
- //      // determining if each letter is a true=vowel or false=consonant
- //    let result = ((isVowel((str.charAt(i)))));
- //    // console.log(str.charAt(i));
- //    // console.log(result);
- //    // if the letter is false the charater is printed, then an o is added and then printed the charater is printed again
- //    if(result === false) {
- //      console.log(str.charAt(i) +"o"+ str.charAt(i));
- //    }
- //    else {
- //      console.log(str.charAt(i));
- //    }
- //
- //    }
- //
- // }
- //
- //  rovarspraket("this is fun");
+  let rovarspraket = (str) => {
+
+    // looping through each letter of the string
+    for (let i = 0; i < str.length; i++) {
+      // determining if each letter is a true=vowel or false=consonant
+    let result = ((isVowel((str.charAt(i)))));
+    // console.log(str.charAt(i));
+    // console.log(result);
+    // if the letter is false the charater is printed, then an o is added and then printed the charater is printed again
+    if(result === false) {
+      console.log(str.charAt(i) +"o"+ str.charAt(i));
+    }
+    else {
+      console.log(str.charAt(i));
+    }
+
+    }
+    // return console.log(rovarspraket("this is fun"));
+ }
+
+  // console.log(rovarspraket("this is fun"));
+
 
 
 
@@ -175,29 +187,33 @@
   // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
   // ---------------------
 
-let str = ["JavaScript is so much fun"]
+
+// *****************************************************DOES NOT WORK************************
 
 
-let strSplit = str.split(' ');
-
-
-
-let findLongestWord = (str) => {
-
-
-
-
-let longestWord = 0;
-
-for(i=0; i<str.length; i++){
-  if(strSplit[i].length > longestWord){
-    longestWord = str.Split[i].length;
-  }
-} return longestWord;
-
-}
-
-console.log(findLongestWord(str))
+// let str = ["JavaScript is so much fun"]
+//
+//
+// let strSplit = str.split(' ');
+//
+//
+//
+// let findLongestWord = (str) => {
+//
+//
+//
+//
+// let longestWord = 0;
+//
+// for(i=0; i<str.length; i++){
+//   if(strSplit[i].length > longestWord){
+//     longestWord = str.Split[i].length;
+//   }
+// } return longestWord;
+//
+// }
+//
+// console.log(findLongestWord(str))
 
 
   // ---------------------
