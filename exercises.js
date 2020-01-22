@@ -30,7 +30,7 @@
     // console.log(max(4,2));
     // console.log(max(2,7));
 
-
+// This is a comment
 
 
 
@@ -228,7 +228,9 @@
   // Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
   // ---------------------
 
-
+  // console.assert(charFreq('aaabaabccc').a === 5);
+  // console.assert(charFreq('aaabaabccc').b === 2);
+  // console.assert(charFreq('aaabaabccc').c === 3);
 
 
 })();
