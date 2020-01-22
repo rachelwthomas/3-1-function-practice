@@ -87,51 +87,32 @@
   // Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
   // ---------------------
 
+  // function description-doubles every consonant and inserts an o inbetween
+  // parameter description-str is the string that is being passed in
+  // return description-will bring every consonant twice with an o in between
 
 
-  let rovarspraket = (str) => {
-
-    // looping through each letter of the string
-    for (let i = 0; i < str.length; i++) {
-      // determining if each letter is a true=vowel or false=consonant
-    let result = ((isVowel((str.charAt(i)))));
-    // console.log(str.charAt(i));
-    // console.log(result);
-    // if the letter is false the charater is printed then an o is added and then printed again
-    if(result === false) {
-      console.log(str.charAt(i) +"o"+ str.charAt(i));
-    }
-    else {
-      console.log(str.charAt(i));
-    }
-
-    }
-
- }
-
-  rovarspraket("this is fun");
-
-
-  //   let newStr = str.replace(/t/g,"tt")
-  //   return newStr
-  // }
-
-
-
-
-
-
-  // console.log(rovarspraket("tot"));
-    // function kebabToSnake(str) {
-    // //replace all -- with __
-    //
-    // let newStr = str.replace(/-/g,"_");
-    // //return str
-    //
-    // }
-    //
-
-
+ //  let rovarspraket = (str) => {
+ //
+ //    // looping through each letter of the string
+ //    for (let i = 0; i < str.length; i++) {
+ //      // determining if each letter is a true=vowel or false=consonant
+ //    let result = ((isVowel((str.charAt(i)))));
+ //    // console.log(str.charAt(i));
+ //    // console.log(result);
+ //    // if the letter is false the charater is printed, then an o is added and then printed the charater is printed again
+ //    if(result === false) {
+ //      console.log(str.charAt(i) +"o"+ str.charAt(i));
+ //    }
+ //    else {
+ //      console.log(str.charAt(i));
+ //    }
+ //
+ //    }
+ //
+ // }
+ //
+ //  rovarspraket("this is fun");
 
 
 
@@ -139,7 +120,31 @@
   // ---------------------
   // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
   // ---------------------
-
+  // let num = [1, 2, 3, 4, 5, 6];
+  //
+  //******************************************THESE DONT WORK************************
+  //  let sum = (num) => {
+  //
+  //    let result = 1;
+  //
+  //    for(i=1; i <= num.length; i++){
+  //      result += i;
+  //      console.log(result);
+  //   } // }console.log(result);
+  //
+  //  }
+  //
+  //  let multiply = (num) => {
+  //
+  //    let result = 1;
+  //
+  //    for(i=1; i <= num.length; i++){
+  //      result *= i;
+  //      console.log(result);
+  //   } // }console.log(result);
+  //
+  //  }
+  //
 
 
 
@@ -149,6 +154,20 @@
   // ---------------------
 
 
+  // function description-prints string in reverse order
+  // parameter description-str is the string that is being passed in
+  // return description-will print string in reverse order
+
+
+  // let reverse = (str) => {
+  //
+  //   for(let i=str.length-1; i>=0; i--) {
+  //     console.log(str[i]);
+  //   }
+  //
+  // }
+  // reverse("jag tester");
+
 
 
 
@@ -156,8 +175,29 @@
   // Define a function findLongestWord() that takes an array of words and returns the length of the longest one.
   // ---------------------
 
+let str = ["JavaScript is so much fun"]
 
 
+let strSplit = str.split(' ');
+
+
+
+let findLongestWord = (str) => {
+
+
+
+
+let longestWord = 0;
+
+for(i=0; i<str.length; i++){
+  if(strSplit[i].length > longestWord){
+    longestWord = str.Split[i].length;
+  }
+} return longestWord;
+
+}
+
+console.log(findLongestWord(str))
 
 
   // ---------------------
@@ -171,5 +211,8 @@
   // ---------------------
   // Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
   // ---------------------
+
+
+
 
 })();
