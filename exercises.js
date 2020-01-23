@@ -135,28 +135,31 @@
   // let num = [1, 2, 3, 4, 5, 6];
   //
   //******************************************THESE DONT WORK************************
-  //  let sum = (num) => {
-  //
-  //    let result = 1;
-  //
-  //    for(i=1; i <= num.length; i++){
-  //      result += i;
-  //      console.log(result);
-  //   } // }console.log(result);
-  //
-  //  }
-  //
-  //  let multiply = (num) => {
-  //
-  //    let result = 1;
-  //
-  //    for(i=1; i <= num.length; i++){
-  //      result *= i;
-  //      console.log(result);
-  //   } // }console.log(result);
-  //
-  //  }
-  //
+   let sum = (num) => {
+
+     let result = 0;
+
+     for(let i=0; i < num.length; i++){
+       result += num[i];
+
+    }  return result;
+
+  }
+    console.log(sum([1,2,3,4]));
+
+
+
+    let multiply = (num) => {
+
+      let result = 1;
+
+      for(let i=0; i < num.length; i++){
+        result *= num[i];
+
+     }  return result;
+
+   }
+     console.log(multiply([1,2,3,4]));
 
 
 
