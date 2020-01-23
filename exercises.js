@@ -123,7 +123,7 @@
     // return console.log(rovarspraket("this is fun"));
  }
 
-  // console.log(rovarspraket("this is fun"));
+  console.log(rovarspraket("this is fun"));
 
 
 
@@ -134,7 +134,7 @@
   // ---------------------
   // let num = [1, 2, 3, 4, 5, 6];
   //
-  //******************************************THESE DONT WORK************************
+
    let sum = (num) => {
 
      let result = 0;
@@ -193,36 +193,52 @@
 
 // *****************************************************DOES NOT WORK************************
 
+// function description-prints the length of the longest word
+// parameter description-str is the string that is being passed in
+// return description-will print the length of the longest string
 
-// let str = ["JavaScript is so much fun"]
-//
-//
-// let strSplit = str.split(' ');
-//
-//
-//
+
+
 // let findLongestWord = (str) => {
 //
+//        let arr = str.split(" ");//split sentence to an array
+//        let longestWord = arr[0];//assume longest word is the first word of an array
+//        for (let i=0; i< arr.length; i++){ //iterate through array of words
 //
-//
-//
-// let longestWord = 0;
-//
-// for(i=0; i<str.length; i++){
-//   if(strSplit[i].length > longestWord){
-//     longestWord = str.Split[i].length;
-//   }
-// } return longestWord;
+// if(arr[i].length > longestWord.length){
+//   //compare other words of an array if they are longer than the first one
+//   console.log(longestWord = arr[i]);
+//  }
+//  }
+// return console.log(longestWord.length);//return length of the longest word
 //
 // }
-//
-// console.log(findLongestWord(str))
+//   //test
+//  findLongestWord("Javascript is so much fun");
+
 
 
   // ---------------------
   // Define a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
   // ---------------------
 
+  let filterLongWords = (str, num) => {
+    let length = str.length;
+    let longestWords = [];
+
+    for(let i=0; i < length; i++){
+      if (str[i].length > num) {
+        longestWords[longestWords.length] =str[i];
+      }
+    }  return longestWords;
+
+
+
+
+
+  }
+
+  console.log(filterLongWords(["The", "interrogatory", "which","inaugurated","this","particular", "interlocution", "presupposes", "the", "existence", "of", "an", "erudite", "but", "languorous", "subclass"],7));
 
 
 
@@ -230,6 +246,24 @@
   // ---------------------
   // Define a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
   // ---------------------
+
+  let charFreq = (str) => {
+    let list = {};
+    let length = str.length;
+    for (let i = 0; i < length; i++) {
+    if (str.charAt(i) in list)
+      list[str.charAt(i)] += +1;
+    else
+      list[str.charAt(i)] = 1;
+    }
+    return list;
+  }
+
+
+
+console.log(charFreq('aaabaabccc'));
+
+
 
   // console.assert(charFreq('aaabaabccc').a === 5);
   // console.assert(charFreq('aaabaabccc').b === 2);
