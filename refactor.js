@@ -36,7 +36,9 @@ function doSomethingCool() {
 
 let apple = function () {
   console.log("Something Cool!");
+
 }
+
 
 // -----------------------------------------------
 
@@ -56,6 +58,13 @@ function sayHi() {
 setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
+
+let sayHi = function() {
+  alert("Hello, World!");
+}
+
+setTimeout(sayHi, 2000);
+
 
 
 // -----------------------------------------------
@@ -87,6 +96,15 @@ console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 
+the first console log will return y, letter was re-declared
+
+the second console log will return z letter was re-declared
+
+
+
+
+
+
 
 // -----------------------------------------------
 
@@ -108,6 +126,14 @@ var reverseStr = function(str) {
 };
 
 // Put your answer below -------------------------
+
+var reverseStr = function(str) {
+  return arr.reverse(str);
+};
+
+
+
+
 
 
 // -----------------------------------------------
@@ -142,6 +168,16 @@ var spanishColor = function(colorName) {
 };
 
 // Put your answer below -------------------------
+
+var spanishColor = function(colorName) {
+  let translateColor = {rojo:#FF0000, blanco:#FFFFFF, azul:#0000FF, verde:#00FF00, negro:#000000}
+
+  for(let i=0; i < translateColor.length; i++){
+    return translate.value;
+
+  }
+};
+
 
 
 // -----------------------------------------------
